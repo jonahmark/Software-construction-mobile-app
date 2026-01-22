@@ -15,7 +15,6 @@
 6. End-to-End Encryption  
 7. Notifications  
 
----
 
 ## Thinking Behind the Scenes
 
@@ -29,7 +28,7 @@
 | **End-to-End Encryption** | Business Logic: encrypt/decrypt messages; Network/API: secure transport; Data Storage: encrypted storage | Signal Protocol (AES-256), TLS / HTTPS | Yes | Messages may fail to decrypt if keys not synced |
 | **Notifications** | UI: banners, badges; Business Logic: triggers; Network/API: Firebase Cloud Messaging / APNs; Data Storage: minimal | FCM (Android), APNs (iOS) | Partially | Notifications may be delayed; offline notifications queued |
 
----
+
 
 ## Change and Maintainability
 
@@ -53,7 +52,6 @@
   - Complex **testing across devices and OS versions**  
   - High risk of **data consistency bugs** across multiple devices  
 
----
 
 ## Software Construction Challenges
 
@@ -63,7 +61,6 @@
 4. **Tight Coupling Between Features:** Messaging, calls, media, and notifications are interconnected; changing one may affect others.  
 5. **Reliability Under Poor Network Conditions:** Must handle low bandwidth, intermittent connectivity, and network interruptions gracefully; requires offline queues and retry logic.  
 
----
 
 ## Personal Reflection
 
@@ -77,7 +74,6 @@
    - Thinking like a software engineer involves considering **architecture, network, storage, encryption, user experience, and edge cases** together.  
    - Proper documentation and reasoning are as important as writing code.  
 
----
 
 ## Contribution Declaration
 
